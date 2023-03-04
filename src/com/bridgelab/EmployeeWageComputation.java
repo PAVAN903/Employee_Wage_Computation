@@ -8,10 +8,10 @@ public class EmployeeWageComputation {
 		int FullTime = 0;
 		int empHr = 0;
 		int wagePerHour = 20;
-		int totalworkingday=20;
-		int totalwage=0;
-		
-        int Attendance = ran.nextInt(3);
+		int totalworkingday = 20;
+		int totalwage = 0;
+		int totalworkingHour = 100;
+		int Attendance = ran.nextInt(3);
 		switch (Attendance) {
 		case 1:
 			System.out.println("Employee is Present");
@@ -31,8 +31,12 @@ public class EmployeeWageComputation {
 			break;
 
 		}
-		int dailyWage=empHr*wagePerHour;
-		int totalwageEmp=dailyWage*totalworkingday;
-		System.out.println("total wage for 20 working day is "+totalwageEmp);
+		int dailyWage = empHr * wagePerHour;
+		int totalworkinghour = wagePerHour * totalworkingHour;
+		System.out.println("total wage for 100 working hour is:: " + totalworkinghour);
+		int totalworkday = totalworkingday * dailyWage;
+		System.out.println(" wage for 20 working day is:: " + totalworkday);
+		int Monthlywage = totalworkinghour + totalworkday;
+		System.out.println("montly wage for 100 hour and 20 work day is: " + Monthlywage);
 	}
 }
