@@ -3,7 +3,7 @@ package com.bridgelab;
 import java.util.Random;
 
 public class EmployeeWageComputation {
-	public static void main(String[] args) {
+	public static void Compute() {
 		Random ran = new Random();
 		int FullTime = 0;
 		int empHr = 0;
@@ -38,5 +38,9 @@ public class EmployeeWageComputation {
 		System.out.println(" wage for 20 working day is:: " + totalworkday);
 		int Monthlywage = totalworkinghour + totalworkday;
 		System.out.println("montly wage for 100 hour and 20 work day is: " + Monthlywage);
+	}
+	public static void main(String[] args) {
+		System.out.println("welcome to employee wage computation");
+		EmployeeWageComputation.Compute();
 	}
 }
