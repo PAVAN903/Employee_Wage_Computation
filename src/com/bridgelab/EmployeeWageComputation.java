@@ -8,9 +8,10 @@ public class EmployeeWageComputation {
 		int FullTime = 0;
 		int empHr = 0;
 		int wagePerHour = 20;
-
-		int Attendance = ran.nextInt(3);
-
+		int totalworkingday=20;
+		int totalwage=0;
+		
+        int Attendance = ran.nextInt(3);
 		switch (Attendance) {
 		case 1:
 			System.out.println("Employee is Present");
@@ -30,5 +31,8 @@ public class EmployeeWageComputation {
 			break;
 
 		}
+		int dailyWage=empHr*wagePerHour;
+		int totalwageEmp=dailyWage*totalworkingday;
+		System.out.println("total wage for 20 working day is "+totalwageEmp);
 	}
 }
